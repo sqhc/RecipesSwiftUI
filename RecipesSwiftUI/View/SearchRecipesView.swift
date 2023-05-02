@@ -12,9 +12,10 @@ struct SearchRecipesView: View {
     
     var body: some View {
         VStack{
-            RecipeQuery(vm: vm)
+            RecipeQuery()
         }
         .navigationTitle("Search recipes")
+        .environmentObject(vm)
     }
 }
 
@@ -25,7 +26,7 @@ struct SearchRecipesView_Previews: PreviewProvider {
 }
 
 struct RecipeQuery: View{
-    @StateObject var vm: SearchRecipesViewModel
+    @EnvironmentObject var vm: SearchRecipesViewModel
     var body: some View{
         VStack{
             Text("Search by query")
@@ -33,6 +34,9 @@ struct RecipeQuery: View{
             TextField("Query", text: $vm.query)
                 .background(Color.gray.opacity(0.3).cornerRadius(20))
                 .padding(10)
+            NavigationLink("Search recipes with query") {
+                QueryRecipesView(vm: QueryRecipesViewModel(query: vm.query))
+            }
         }
     }
 }
