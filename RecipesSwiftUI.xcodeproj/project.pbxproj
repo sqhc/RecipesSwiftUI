@@ -14,6 +14,9 @@
 		06B786692A01776000EFA46F /* RecipesSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786682A01776000EFA46F /* RecipesSwiftUITests.swift */; };
 		06B786732A01776000EFA46F /* RecipesSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786722A01776000EFA46F /* RecipesSwiftUIUITests.swift */; };
 		06B786752A01776000EFA46F /* RecipesSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786742A01776000EFA46F /* RecipesSwiftUIUITestsLaunchTests.swift */; };
+		06B786852A017C8600EFA46F /* SearchRecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786842A017C8600EFA46F /* SearchRecipesView.swift */; };
+		06B786872A017CE300EFA46F /* SearchRecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786862A017CE300EFA46F /* SearchRecipesViewModel.swift */; };
+		06B786892A018AA700EFA46F /* RecipeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786882A018AA700EFA46F /* RecipeDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		06B7866E2A01776000EFA46F /* RecipesSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipesSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B786722A01776000EFA46F /* RecipesSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesSwiftUIUITests.swift; sourceTree = "<group>"; };
 		06B786742A01776000EFA46F /* RecipesSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		06B786842A017C8600EFA46F /* SearchRecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipesView.swift; sourceTree = "<group>"; };
+		06B786862A017CE300EFA46F /* SearchRecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipesViewModel.swift; sourceTree = "<group>"; };
+		06B786882A018AA700EFA46F /* RecipeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,10 @@
 		06B786562A01775000EFA46F /* RecipesSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				06B786812A017B8600EFA46F /* Model */,
+				06B786822A017B9300EFA46F /* View */,
+				06B786832A017BA800EFA46F /* View Model */,
 				06B786572A01775000EFA46F /* RecipesSwiftUIApp.swift */,
-				06B786592A01775000EFA46F /* ContentView.swift */,
 				06B7865B2A01775F00EFA46F /* Assets.xcassets */,
 				06B7865D2A01775F00EFA46F /* Preview Content */,
 			);
@@ -125,6 +133,31 @@
 				06B786742A01776000EFA46F /* RecipesSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = RecipesSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		06B786812A017B8600EFA46F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06B786882A018AA700EFA46F /* RecipeDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		06B786822A017B9300EFA46F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				06B786592A01775000EFA46F /* ContentView.swift */,
+				06B786842A017C8600EFA46F /* SearchRecipesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		06B786832A017BA800EFA46F /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				06B786862A017CE300EFA46F /* SearchRecipesViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06B786872A017CE300EFA46F /* SearchRecipesViewModel.swift in Sources */,
 				06B7865A2A01775000EFA46F /* ContentView.swift in Sources */,
 				06B786582A01775000EFA46F /* RecipesSwiftUIApp.swift in Sources */,
+				06B786852A017C8600EFA46F /* SearchRecipesView.swift in Sources */,
+				06B786892A018AA700EFA46F /* RecipeDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
