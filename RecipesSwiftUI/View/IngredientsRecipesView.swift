@@ -72,6 +72,7 @@ struct IngredientRecipeItem: View{
                 RecipeInformationView(vm: RecipeInformationViewModel(id: recipe.id ?? 0))
             }
             Divider()
+            Spacer()
             NavigationLink("Similar recipes") {
                 SimilarRecipesView(vm: SimilarRecipesViewModel(id: recipe.id ?? 0))
             }
