@@ -13,6 +13,8 @@ struct SearchRecipesView: View {
     var body: some View {
         VStack{
             RecipeQuery()
+            Divider()
+            RecipeIngredients()
         }
         .navigationTitle("Search recipes")
         .environmentObject(vm)
@@ -36,6 +38,28 @@ struct RecipeQuery: View{
                 .padding(10)
             NavigationLink("Search recipes with query") {
                 QueryRecipesView(vm: QueryRecipesViewModel(query: vm.query))
+            }
+        }
+    }
+}
+
+struct RecipeIngredients: View{
+    @EnvironmentObject var vm: SearchRecipesViewModel
+    
+    var body: some View{
+        VStack{
+            Text("Search by ingredients")
+                .font(.title2)
+            TextField("Ingredients", text: $vm.ingredients)
+                .background(Color.gray.opacity(0.3).cornerRadius(20))
+                .padding(10)
+            Text("How many recipes do you want?")
+                .font(.headline)
+            Stepper(value: $vm.number, in: 0...50) {
+                Text("Number of recipes")
+            }
+            NavigationLink("Search recipes with ingreidents") {
+                IngredientsRecipesView(vm: IngredientsRecipesViewModel(ingredients: vm.ingredients, number: vm.number))
             }
         }
     }

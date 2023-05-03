@@ -16,3 +16,18 @@ struct RapidRecipe: Codable{
     let title: String?
     let image: String?
 }
+
+struct RecipeFromIngredient: Codable{
+    let id: Int?
+    let title: String?
+    let image: String?
+    let usedIngredients: [IngredientOfRecipe]?
+    let likes: Int?
+}
+
+struct IngredientOfRecipe: Codable{
+    let id: Int?
+    let aisle: String?
+    let original: String?
+    let image: String?
+}

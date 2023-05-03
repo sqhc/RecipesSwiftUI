@@ -9,4 +9,6 @@ import Foundation
 
 class SearchRecipesViewModel: ObservableObject{
     @Published var query = ""
+    @Published var ingredients = ""
+    @Published var number = 5
 }
