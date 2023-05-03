@@ -50,6 +50,9 @@ struct recipeItem: View{
             Text(recipe.title ?? "")
                 .font(.title3)
             AsyncImage(url: URL(string: recipe.image!))
+            NavigationLink("Information") {
+                RecipeInformationView(vm: RecipeInformationViewModel(id: recipe.id ?? 0))
+            }
         }
     }
 }
