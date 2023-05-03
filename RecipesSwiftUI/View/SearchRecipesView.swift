@@ -56,7 +56,7 @@ struct RecipeIngredients: View{
             Text("How many recipes do you want?")
                 .font(.headline)
             Stepper(value: $vm.number, in: 0...50) {
-                Text("Number of recipes")
+                Text("Number of recipes: \(vm.number)")
             }
             NavigationLink("Search recipes with ingreidents") {
                 IngredientsRecipesView(vm: IngredientsRecipesViewModel(ingredients: vm.ingredients, number: vm.number))
