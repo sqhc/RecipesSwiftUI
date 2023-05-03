@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct QueryRecipesView: View {
-    @ObservedObject var vm: QueryRecipesViewModel
+    @StateObject var vm: QueryRecipesViewModel
     
     var body: some View {
         ZStack{
@@ -52,6 +52,10 @@ struct recipeItem: View{
             AsyncImage(url: URL(string: recipe.image!))
             NavigationLink("Information") {
                 RecipeInformationView(vm: RecipeInformationViewModel(id: recipe.id ?? 0))
+            }
+            Divider()
+            NavigationLink("Similar recipes") {
+                SimilarRecipesView(vm: SimilarRecipesViewModel(id: recipe.id ?? 0))
             }
         }
     }
