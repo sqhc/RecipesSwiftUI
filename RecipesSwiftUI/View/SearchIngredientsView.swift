@@ -37,6 +37,9 @@ struct QueryIngredientItem: View{
             Stepper(value: $vm.number, in: 1...100) {
                 Text("Number of ingredients: \(vm.number)")
             }
+            NavigationLink("Search ingredients") {
+                QueryIngredientsView(vm: QueryIngredientsViewModel(query: vm.query, number: vm.number))
+            }
         }
     }
 }
