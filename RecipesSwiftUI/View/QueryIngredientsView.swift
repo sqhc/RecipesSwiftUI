@@ -47,6 +47,9 @@ struct ShowIngredientItem: View{
     var body: some View{
         VStack{
             Text(ingredient.name ?? "")
+            NavigationLink("Information") {
+                IngredientInformationView(vm: IngredientInformationViewModel(id: ingredient.id ?? 0))
+            }
         }
     }
 }

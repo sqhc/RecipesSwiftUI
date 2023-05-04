@@ -32,6 +32,9 @@
 		06B786A32A03E52E00EFA46F /* IngredientsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786A22A03E52E00EFA46F /* IngredientsDataModel.swift */; };
 		06B786A52A03E64000EFA46F /* QueryIngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786A42A03E64000EFA46F /* QueryIngredientsView.swift */; };
 		06B786A72A03E65F00EFA46F /* QueryIngredientsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786A62A03E65F00EFA46F /* QueryIngredientsViewModel.swift */; };
+		06B786A92A03F19900EFA46F /* IngredientInfoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786A82A03F19900EFA46F /* IngredientInfoDataModel.swift */; };
+		06B786AB2A03F2D700EFA46F /* IngredientInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786AA2A03F2D700EFA46F /* IngredientInformationView.swift */; };
+		06B786AD2A03F2EA00EFA46F /* IngredientInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786AC2A03F2EA00EFA46F /* IngredientInformationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		06B786A22A03E52E00EFA46F /* IngredientsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsDataModel.swift; sourceTree = "<group>"; };
 		06B786A42A03E64000EFA46F /* QueryIngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryIngredientsView.swift; sourceTree = "<group>"; };
 		06B786A62A03E65F00EFA46F /* QueryIngredientsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryIngredientsViewModel.swift; sourceTree = "<group>"; };
+		06B786A82A03F19900EFA46F /* IngredientInfoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientInfoDataModel.swift; sourceTree = "<group>"; };
+		06B786AA2A03F2D700EFA46F /* IngredientInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientInformationView.swift; sourceTree = "<group>"; };
+		06B786AC2A03F2EA00EFA46F /* IngredientInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientInformationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,7 @@
 				06B7868E2A01C93400EFA46F /* RecipeInfoDataModel.swift */,
 				06B786942A02D31000EFA46F /* SimilarRecipeDataModel.swift */,
 				06B786A22A03E52E00EFA46F /* IngredientsDataModel.swift */,
+				06B786A82A03F19900EFA46F /* IngredientInfoDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +194,7 @@
 				06B7869A2A02E68E00EFA46F /* IngredientsRecipesView.swift */,
 				06B7869E2A03273200EFA46F /* SearchIngredientsView.swift */,
 				06B786A42A03E64000EFA46F /* QueryIngredientsView.swift */,
+				06B786AA2A03F2D700EFA46F /* IngredientInformationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,6 +209,7 @@
 				06B7869C2A02E6B700EFA46F /* IngredientsRecipesViewModel.swift */,
 				06B786A02A03281A00EFA46F /* SearchIngredientsViewModel.swift */,
 				06B786A62A03E65F00EFA46F /* QueryIngredientsViewModel.swift */,
+				06B786AC2A03F2EA00EFA46F /* IngredientInformationViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -339,6 +348,8 @@
 				06B7868B2A0190E800EFA46F /* QueryRecipesView.swift in Sources */,
 				06B786A32A03E52E00EFA46F /* IngredientsDataModel.swift in Sources */,
 				06B7865A2A01775000EFA46F /* ContentView.swift in Sources */,
+				06B786AD2A03F2EA00EFA46F /* IngredientInformationViewModel.swift in Sources */,
+				06B786A92A03F19900EFA46F /* IngredientInfoDataModel.swift in Sources */,
 				06B7869F2A03273200EFA46F /* SearchIngredientsView.swift in Sources */,
 				06B786A12A03281A00EFA46F /* SearchIngredientsViewModel.swift in Sources */,
 				06B786992A02D48700EFA46F /* SimilarRecipesViewModel.swift in Sources */,
@@ -348,6 +359,7 @@
 				06B786952A02D31200EFA46F /* SimilarRecipeDataModel.swift in Sources */,
 				06B786582A01775000EFA46F /* RecipesSwiftUIApp.swift in Sources */,
 				06B786972A02D42F00EFA46F /* SimilarRecipesView.swift in Sources */,
+				06B786AB2A03F2D700EFA46F /* IngredientInformationView.swift in Sources */,
 				06B7868D2A01917C00EFA46F /* QueryRecipesViewModel.swift in Sources */,
 				06B786932A01DA2000EFA46F /* RecipeInformationViewModel.swift in Sources */,
 				06B786912A01DA0400EFA46F /* RecipeInformationView.swift in Sources */,
