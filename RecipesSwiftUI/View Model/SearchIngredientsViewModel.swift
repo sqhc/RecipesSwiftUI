@@ -10,4 +10,5 @@ import Foundation
 class SearchIngredientsViewModel: ObservableObject{
     var query = ""
     var number = 10
+    var autoComplete = ""
 }

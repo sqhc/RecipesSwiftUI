@@ -15,3 +15,7 @@ struct RapidIngredient: Codable{
     let id: Int?
     let name: String?
 }
+
+struct RapidAutoCompleteIngredient: Codable{
+    let name: String?
+}
