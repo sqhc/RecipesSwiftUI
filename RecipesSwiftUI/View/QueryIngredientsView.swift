@@ -50,6 +50,11 @@ struct ShowIngredientItem: View{
             NavigationLink("Information") {
                 IngredientInformationView(vm: IngredientInformationViewModel(id: ingredient.id ?? 0))
             }
+            Divider()
+            Text("Check substitutes")
+            NavigationLink("Substitutes") {
+                IngredientSubstitutesView(vm: IngredientSubstitutesViewModel(id: ingredient.id ?? 0))
+            }
         }
     }
 }
