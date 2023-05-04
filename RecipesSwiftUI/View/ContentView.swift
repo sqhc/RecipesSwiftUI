@@ -22,6 +22,12 @@ struct ContentView: View {
                 NavigationLink("Search ingredients") {
                     SearchIngredientsView()
                 }
+                Divider()
+                Text("Products")
+                    .font(.title)
+                NavigationLink("Search products") {
+                    SearchProductsView()
+                }
             }
             .navigationTitle("Search options")
         }

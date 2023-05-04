@@ -40,6 +40,11 @@
 		06B786B32A041C5900EFA46F /* IngredientSubstitutesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786B22A041C5900EFA46F /* IngredientSubstitutesViewModel.swift */; };
 		06B786B52A04387000EFA46F /* AutoCompleteIngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786B42A04387000EFA46F /* AutoCompleteIngredientsView.swift */; };
 		06B786B72A0438AA00EFA46F /* AutoCompleteIngredientsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786B62A0438AA00EFA46F /* AutoCompleteIngredientsViewModel.swift */; };
+		06B786B92A04458000EFA46F /* SearchProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786B82A04458000EFA46F /* SearchProductsView.swift */; };
+		06B786BB2A0446FF00EFA46F /* SearchProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786BA2A0446FF00EFA46F /* SearchProductsViewModel.swift */; };
+		06B786BD2A044AF000EFA46F /* ProudctsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786BC2A044AF000EFA46F /* ProudctsDataModel.swift */; };
+		06B786BF2A044D6200EFA46F /* QueryProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786BE2A044D6200EFA46F /* QueryProductsView.swift */; };
+		06B786C12A044D7C00EFA46F /* QueryProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786C02A044D7C00EFA46F /* QueryProductsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +101,11 @@
 		06B786B22A041C5900EFA46F /* IngredientSubstitutesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientSubstitutesViewModel.swift; sourceTree = "<group>"; };
 		06B786B42A04387000EFA46F /* AutoCompleteIngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompleteIngredientsView.swift; sourceTree = "<group>"; };
 		06B786B62A0438AA00EFA46F /* AutoCompleteIngredientsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompleteIngredientsViewModel.swift; sourceTree = "<group>"; };
+		06B786B82A04458000EFA46F /* SearchProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductsView.swift; sourceTree = "<group>"; };
+		06B786BA2A0446FF00EFA46F /* SearchProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductsViewModel.swift; sourceTree = "<group>"; };
+		06B786BC2A044AF000EFA46F /* ProudctsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProudctsDataModel.swift; sourceTree = "<group>"; };
+		06B786BE2A044D6200EFA46F /* QueryProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryProductsView.swift; sourceTree = "<group>"; };
+		06B786C02A044D7C00EFA46F /* QueryProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryProductsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +200,7 @@
 				06B786A22A03E52E00EFA46F /* IngredientsDataModel.swift */,
 				06B786A82A03F19900EFA46F /* IngredientInfoDataModel.swift */,
 				06B786AE2A041BAE00EFA46F /* IngredientSubstitutesDataModel.swift */,
+				06B786BC2A044AF000EFA46F /* ProudctsDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,6 +219,8 @@
 				06B786AA2A03F2D700EFA46F /* IngredientInformationView.swift */,
 				06B786B02A041C4000EFA46F /* IngredientSubstitutesView.swift */,
 				06B786B42A04387000EFA46F /* AutoCompleteIngredientsView.swift */,
+				06B786B82A04458000EFA46F /* SearchProductsView.swift */,
+				06B786BE2A044D6200EFA46F /* QueryProductsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +238,8 @@
 				06B786AC2A03F2EA00EFA46F /* IngredientInformationViewModel.swift */,
 				06B786B22A041C5900EFA46F /* IngredientSubstitutesViewModel.swift */,
 				06B786B62A0438AA00EFA46F /* AutoCompleteIngredientsViewModel.swift */,
+				06B786BA2A0446FF00EFA46F /* SearchProductsViewModel.swift */,
+				06B786C02A044D7C00EFA46F /* QueryProductsViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -360,6 +375,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				06B786872A017CE300EFA46F /* SearchRecipesViewModel.swift in Sources */,
+				06B786C12A044D7C00EFA46F /* QueryProductsViewModel.swift in Sources */,
+				06B786B92A04458000EFA46F /* SearchProductsView.swift in Sources */,
 				06B7868B2A0190E800EFA46F /* QueryRecipesView.swift in Sources */,
 				06B786A32A03E52E00EFA46F /* IngredientsDataModel.swift in Sources */,
 				06B786B52A04387000EFA46F /* AutoCompleteIngredientsView.swift in Sources */,
@@ -372,6 +389,7 @@
 				06B7868F2A01C93500EFA46F /* RecipeInfoDataModel.swift in Sources */,
 				06B786B72A0438AA00EFA46F /* AutoCompleteIngredientsViewModel.swift in Sources */,
 				06B786AF2A041BAE00EFA46F /* IngredientSubstitutesDataModel.swift in Sources */,
+				06B786BD2A044AF000EFA46F /* ProudctsDataModel.swift in Sources */,
 				06B786A72A03E65F00EFA46F /* QueryIngredientsViewModel.swift in Sources */,
 				06B7869B2A02E68F00EFA46F /* IngredientsRecipesView.swift in Sources */,
 				06B786952A02D31200EFA46F /* SimilarRecipeDataModel.swift in Sources */,
@@ -380,12 +398,14 @@
 				06B786AB2A03F2D700EFA46F /* IngredientInformationView.swift in Sources */,
 				06B7868D2A01917C00EFA46F /* QueryRecipesViewModel.swift in Sources */,
 				06B786932A01DA2000EFA46F /* RecipeInformationViewModel.swift in Sources */,
+				06B786BF2A044D6200EFA46F /* QueryProductsView.swift in Sources */,
 				06B786912A01DA0400EFA46F /* RecipeInformationView.swift in Sources */,
 				06B786852A017C8600EFA46F /* SearchRecipesView.swift in Sources */,
 				06B786892A018AA700EFA46F /* RecipeDataModel.swift in Sources */,
 				06B786B12A041C4000EFA46F /* IngredientSubstitutesView.swift in Sources */,
 				06B786A52A03E64000EFA46F /* QueryIngredientsView.swift in Sources */,
 				06B7869D2A02E6B700EFA46F /* IngredientsRecipesViewModel.swift in Sources */,
+				06B786BB2A0446FF00EFA46F /* SearchProductsViewModel.swift in Sources */,
 				06B786B32A041C5900EFA46F /* IngredientSubstitutesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
