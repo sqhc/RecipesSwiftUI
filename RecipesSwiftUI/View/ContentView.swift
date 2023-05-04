@@ -11,8 +11,16 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             VStack{
+                Text("Recipes")
+                    .font(.title)
                 NavigationLink("Search recipes") {
                     SearchRecipesView()
+                }
+                Divider()
+                Text("Ingredients")
+                    .font(.title)
+                NavigationLink("Search ingredients") {
+                    SearchIngredientsView()
                 }
             }
             .navigationTitle("Search options")
