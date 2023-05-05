@@ -48,6 +48,9 @@
 		06B786C32A047CFF00EFA46F /* ProductInformationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786C22A047CFF00EFA46F /* ProductInformationDataModel.swift */; };
 		06B786C52A04822800EFA46F /* ProductInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786C42A04822800EFA46F /* ProductInformationView.swift */; };
 		06B786C72A04824E00EFA46F /* ProductInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786C62A04824E00EFA46F /* ProductInformationViewModel.swift */; };
+		06B786C92A052B1500EFA46F /* ComparableProductsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786C82A052B1500EFA46F /* ComparableProductsDataModel.swift */; };
+		06B786CB2A05308000EFA46F /* ComparableProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786CA2A05308000EFA46F /* ComparableProductsView.swift */; };
+		06B786CD2A0530AA00EFA46F /* ComparableProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786CC2A0530AA00EFA46F /* ComparableProductsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +115,9 @@
 		06B786C22A047CFF00EFA46F /* ProductInformationDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInformationDataModel.swift; sourceTree = "<group>"; };
 		06B786C42A04822800EFA46F /* ProductInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInformationView.swift; sourceTree = "<group>"; };
 		06B786C62A04824E00EFA46F /* ProductInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInformationViewModel.swift; sourceTree = "<group>"; };
+		06B786C82A052B1500EFA46F /* ComparableProductsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableProductsDataModel.swift; sourceTree = "<group>"; };
+		06B786CA2A05308000EFA46F /* ComparableProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableProductsView.swift; sourceTree = "<group>"; };
+		06B786CC2A0530AA00EFA46F /* ComparableProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableProductsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +214,7 @@
 				06B786AE2A041BAE00EFA46F /* IngredientSubstitutesDataModel.swift */,
 				06B786BC2A044AF000EFA46F /* ProudctsDataModel.swift */,
 				06B786C22A047CFF00EFA46F /* ProductInformationDataModel.swift */,
+				06B786C82A052B1500EFA46F /* ComparableProductsDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -229,6 +236,7 @@
 				06B786B82A04458000EFA46F /* SearchProductsView.swift */,
 				06B786BE2A044D6200EFA46F /* QueryProductsView.swift */,
 				06B786C42A04822800EFA46F /* ProductInformationView.swift */,
+				06B786CA2A05308000EFA46F /* ComparableProductsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -249,6 +257,7 @@
 				06B786BA2A0446FF00EFA46F /* SearchProductsViewModel.swift */,
 				06B786C02A044D7C00EFA46F /* QueryProductsViewModel.swift */,
 				06B786C62A04824E00EFA46F /* ProductInformationViewModel.swift */,
+				06B786CC2A0530AA00EFA46F /* ComparableProductsViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -413,11 +422,14 @@
 				06B786912A01DA0400EFA46F /* RecipeInformationView.swift in Sources */,
 				06B786852A017C8600EFA46F /* SearchRecipesView.swift in Sources */,
 				06B786892A018AA700EFA46F /* RecipeDataModel.swift in Sources */,
+				06B786C92A052B1500EFA46F /* ComparableProductsDataModel.swift in Sources */,
 				06B786B12A041C4000EFA46F /* IngredientSubstitutesView.swift in Sources */,
+				06B786CB2A05308000EFA46F /* ComparableProductsView.swift in Sources */,
 				06B786A52A03E64000EFA46F /* QueryIngredientsView.swift in Sources */,
 				06B7869D2A02E6B700EFA46F /* IngredientsRecipesViewModel.swift in Sources */,
 				06B786C72A04824E00EFA46F /* ProductInformationViewModel.swift in Sources */,
 				06B786BB2A0446FF00EFA46F /* SearchProductsViewModel.swift in Sources */,
+				06B786CD2A0530AA00EFA46F /* ComparableProductsViewModel.swift in Sources */,
 				06B786B32A041C5900EFA46F /* IngredientSubstitutesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

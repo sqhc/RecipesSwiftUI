@@ -35,6 +35,9 @@ struct ProductInformationView: View {
                         }
                     }
                     Text(information.ingredientList ?? "")
+                    NavigationLink("Comparable products") {
+                        ComparableProductsView(vm: ComparableProductsViewModel(upc: information.upc ?? ""))
+                    }
                 }
                 .navigationTitle("Product information")
             }
