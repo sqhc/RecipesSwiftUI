@@ -13,6 +13,8 @@ struct SearchMenuItemsView: View {
     var body: some View {
         VStack{
             QuerySearchMenuIte()
+            Divider()
+            AutoCompleteSearchMenuItem()
         }
         .environmentObject(vm)
         .navigationTitle("Search for menu items")
@@ -40,6 +42,19 @@ struct QuerySearchMenuIte: View{
             }
             NavigationLink("Search menu items") {
                 QueryMenuItemsView(vm: QueryMenuItemsViewModel(query: vm.query, number: vm.number))
+            }
+        }
+    }
+}
+
+struct AutoCompleteSearchMenuItem: View{
+    @EnvironmentObject var vm: SearchMenuItemsViewModel
+    var body: some View{
+        VStack{
+            Text("Autocomplete menu items search")
+                .font(.title2)
+            NavigationLink("Autocomplete menu items") {
+                AutoCompleteMenuItemsView(vm: AutoCompleteMenuItemsViewModel(query: vm.query, number: vm.number))
             }
         }
     }

@@ -61,6 +61,9 @@
 		06B786DD2A057F4C00EFA46F /* MenuItemInformationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786DC2A057F4B00EFA46F /* MenuItemInformationDataModel.swift */; };
 		06B786DF2A05818C00EFA46F /* MenuItemInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786DE2A05818C00EFA46F /* MenuItemInformationView.swift */; };
 		06B786E12A0581AB00EFA46F /* MenuItemInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786E02A0581AB00EFA46F /* MenuItemInformationViewModel.swift */; };
+		06B786E32A05896A00EFA46F /* MenuItemAutoCompleteDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786E22A05896900EFA46F /* MenuItemAutoCompleteDataModel.swift */; };
+		06B786E52A058B7B00EFA46F /* AutoCompleteMenuItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786E42A058B7B00EFA46F /* AutoCompleteMenuItemsView.swift */; };
+		06B786E72A058B9900EFA46F /* AutoCompleteMenuItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786E62A058B9900EFA46F /* AutoCompleteMenuItemsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +141,9 @@
 		06B786DC2A057F4B00EFA46F /* MenuItemInformationDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemInformationDataModel.swift; sourceTree = "<group>"; };
 		06B786DE2A05818C00EFA46F /* MenuItemInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemInformationView.swift; sourceTree = "<group>"; };
 		06B786E02A0581AB00EFA46F /* MenuItemInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemInformationViewModel.swift; sourceTree = "<group>"; };
+		06B786E22A05896900EFA46F /* MenuItemAutoCompleteDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemAutoCompleteDataModel.swift; sourceTree = "<group>"; };
+		06B786E42A058B7B00EFA46F /* AutoCompleteMenuItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompleteMenuItemsView.swift; sourceTree = "<group>"; };
+		06B786E62A058B9900EFA46F /* AutoCompleteMenuItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompleteMenuItemsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +243,7 @@
 				06B786C82A052B1500EFA46F /* ComparableProductsDataModel.swift */,
 				06B786D22A056CD300EFA46F /* MenuItemsDataModel.swift */,
 				06B786DC2A057F4B00EFA46F /* MenuItemInformationDataModel.swift */,
+				06B786E22A05896900EFA46F /* MenuItemAutoCompleteDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,6 +270,7 @@
 				06B786D42A056DA600EFA46F /* SearchMenuItemsView.swift */,
 				06B786D82A0571C600EFA46F /* QueryMenuItemsView.swift */,
 				06B786DE2A05818C00EFA46F /* MenuItemInformationView.swift */,
+				06B786E42A058B7B00EFA46F /* AutoCompleteMenuItemsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -288,6 +296,7 @@
 				06B786D62A056DBE00EFA46F /* SearchMenuItemsViewModel.swift */,
 				06B786DA2A0571DC00EFA46F /* QueryMenuItemsViewModel.swift */,
 				06B786E02A0581AB00EFA46F /* MenuItemInformationViewModel.swift */,
+				06B786E62A058B9900EFA46F /* AutoCompleteMenuItemsViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -423,9 +432,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				06B786872A017CE300EFA46F /* SearchRecipesViewModel.swift in Sources */,
+				06B786E32A05896A00EFA46F /* MenuItemAutoCompleteDataModel.swift in Sources */,
 				06B786C12A044D7C00EFA46F /* QueryProductsViewModel.swift in Sources */,
 				06B786DD2A057F4C00EFA46F /* MenuItemInformationDataModel.swift in Sources */,
 				06B786B92A04458000EFA46F /* SearchProductsView.swift in Sources */,
+				06B786E52A058B7B00EFA46F /* AutoCompleteMenuItemsView.swift in Sources */,
 				06B7868B2A0190E800EFA46F /* QueryRecipesView.swift in Sources */,
 				06B786A32A03E52E00EFA46F /* IngredientsDataModel.swift in Sources */,
 				06B786B52A04387000EFA46F /* AutoCompleteIngredientsView.swift in Sources */,
@@ -456,6 +467,7 @@
 				06B786AB2A03F2D700EFA46F /* IngredientInformationView.swift in Sources */,
 				06B7868D2A01917C00EFA46F /* QueryRecipesViewModel.swift in Sources */,
 				06B786932A01DA2000EFA46F /* RecipeInformationViewModel.swift in Sources */,
+				06B786E72A058B9900EFA46F /* AutoCompleteMenuItemsViewModel.swift in Sources */,
 				06B786CF2A0544B600EFA46F /* AutoCompleteProductsView.swift in Sources */,
 				06B786BF2A044D6200EFA46F /* QueryProductsView.swift in Sources */,
 				06B786912A01DA0400EFA46F /* RecipeInformationView.swift in Sources */,
