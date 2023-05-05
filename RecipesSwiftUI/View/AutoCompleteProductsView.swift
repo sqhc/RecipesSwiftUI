@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AutoCompleteProductsView: View {
     @ObservedObject var vm: AutoCompleteProductsViewModel
+    @State private var appeared = false
     
     var body: some View {
         ZStack{
@@ -28,7 +29,11 @@ struct AutoCompleteProductsView: View {
                 ProgressView()
             }
         }
-        .onAppear(perform: vm.fetchProducts)
+        .onAppear(perform: {
+            guard !appeared else {return}
+            appeared.toggle()
+            vm.fetchProducts()
+        })
         .alert(isPresented: $vm.hasError, error: vm.error) {
             Button {
                 

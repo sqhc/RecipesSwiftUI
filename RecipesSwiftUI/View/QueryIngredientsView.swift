@@ -9,6 +9,8 @@ import SwiftUI
 
 struct QueryIngredientsView: View {
     @StateObject var vm: QueryIngredientsViewModel
+    @State private var appeared = false
+    
     var body: some View {
         ZStack{
             if let ingredients = vm.ingredients?.results{
@@ -24,7 +26,12 @@ struct QueryIngredientsView: View {
                 ProgressView()
             }
         }
-        .onAppear(perform: vm.fetchIngredients)
+        //.onAppear(perform: vm.fetchIngredients)
+        .onAppear(perform: {
+            guard !appeared else {return}
+            appeared.toggle()
+            vm.fetchIngredients()
+        })
         .alert(isPresented: $vm.hasError, error: vm.error) {
             Button {
                 

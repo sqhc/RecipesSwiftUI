@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AutoCompleteMenuItemsView: View {
     @StateObject var vm: AutoCompleteMenuItemsViewModel
+    @State private var appeared = false
     
     var body: some View {
         ZStack{
@@ -30,7 +31,11 @@ struct AutoCompleteMenuItemsView: View {
                 ProgressView()
             }
         }
-        .onAppear(perform: vm.fetchItems)
+        .onAppear(perform: {
+            guard !appeared else {return}
+            appeared.toggle()
+            vm.fetchItems()
+        })
         .alert(isPresented: $vm.hasError, error: vm.error) {
             Button {
                 

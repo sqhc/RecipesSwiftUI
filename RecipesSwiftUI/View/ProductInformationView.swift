@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProductInformationView: View {
     @StateObject var vm: ProductInformationViewModel
+    @State private var appeared = false
     
     var body: some View {
         ZStack{
@@ -45,7 +46,11 @@ struct ProductInformationView: View {
                 ProgressView()
             }
         }
-        .onAppear(perform: vm.fetchInformation)
+        .onAppear(perform: {
+            guard !appeared else {return}
+            appeared.toggle()
+            vm.fetchInformation()
+        })
         .alert(isPresented: $vm.hasError, error: vm.error) {
             Button {
                 

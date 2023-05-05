@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SimilarRecipesView: View {
     @StateObject var vm: SimilarRecipesViewModel
-    
+    @State private var appeared = false
     var body: some View {
         ZStack{
             if let similars = vm.similars{
@@ -25,7 +25,11 @@ struct SimilarRecipesView: View {
                 ProgressView()
             }
         }
-        .onAppear(perform: vm.fetchSimilars)
+        .onAppear(perform: {
+            guard !appeared else {return}
+            appeared.toggle()
+            vm.fetchSimilars()
+        })
         .alert(isPresented: $vm.hasError, error: vm.error) {
             Button {
                 
