@@ -50,6 +50,9 @@ struct DisplayQueryMenuItem: View{
                 .font(.title2)
             Text("Restaurant: \(item.restaurantChain ?? "")")
             AsyncImage(url: URL(string: item.image ?? ""))
+            NavigationLink("Information") {
+                MenuItemInformationView(vm: MenuItemInformationViewModel(id: item.id ?? 0))
+            }
         }
     }
 }
