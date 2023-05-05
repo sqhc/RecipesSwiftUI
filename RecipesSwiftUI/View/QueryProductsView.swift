@@ -49,6 +49,9 @@ struct ProductItem: View{
             Text(product.title ?? "")
                 .font(.title3)
             AsyncImage(url: URL(string: product.image ?? ""))
+            NavigationLink("Information") {
+                ProductInformationView(vm: ProductInformationViewModel(id: product.id ?? 0))
+            }
         }
     }
 }
