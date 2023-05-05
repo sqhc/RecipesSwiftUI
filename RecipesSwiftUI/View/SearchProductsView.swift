@@ -13,6 +13,8 @@ struct SearchProductsView: View {
     var body: some View {
         VStack{
             QuerySearchProductsItem()
+            Divider()
+            AutoCompleteProductSearchItem()
         }
         .environmentObject(vm)
         .navigationTitle("Search for products")
@@ -39,6 +41,22 @@ struct QuerySearchProductsItem: View{
             }
             NavigationLink("Search products") {
                 QueryProductsView(vm: QueryProductsViewModel(query: vm.query, number: vm.number))
+            }
+        }
+    }
+}
+
+struct AutoCompleteProductSearchItem: View{
+    @EnvironmentObject var vm: SearchProductsViewModel
+    var body: some View{
+        VStack{
+            Text("Auto complete Search")
+                .font(.title2)
+            TextField("Partial query", text: $vm.autocomplete)
+                .background(Color.gray.opacity(0.3).cornerRadius(20))
+                .padding(10)
+            NavigationLink("Auto complet products") {
+                AutoCompleteProductsView(vm: AutoCompleteProductsViewModel(query: vm.autocomplete, number: vm.number))
             }
         }
     }

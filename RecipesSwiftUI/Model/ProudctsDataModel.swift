@@ -16,3 +16,7 @@ struct RapidProduct: Codable{
     let id: Int?
     let title: String?
 }
+
+struct AutoCompleteProducts: Codable{
+    let results: [RapidProduct]?
+}

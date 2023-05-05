@@ -51,6 +51,8 @@
 		06B786C92A052B1500EFA46F /* ComparableProductsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786C82A052B1500EFA46F /* ComparableProductsDataModel.swift */; };
 		06B786CB2A05308000EFA46F /* ComparableProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786CA2A05308000EFA46F /* ComparableProductsView.swift */; };
 		06B786CD2A0530AA00EFA46F /* ComparableProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786CC2A0530AA00EFA46F /* ComparableProductsViewModel.swift */; };
+		06B786CF2A0544B600EFA46F /* AutoCompleteProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786CE2A0544B600EFA46F /* AutoCompleteProductsView.swift */; };
+		06B786D12A0544FD00EFA46F /* AutoCompleteProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B786D02A0544FD00EFA46F /* AutoCompleteProductsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +120,8 @@
 		06B786C82A052B1500EFA46F /* ComparableProductsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableProductsDataModel.swift; sourceTree = "<group>"; };
 		06B786CA2A05308000EFA46F /* ComparableProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableProductsView.swift; sourceTree = "<group>"; };
 		06B786CC2A0530AA00EFA46F /* ComparableProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableProductsViewModel.swift; sourceTree = "<group>"; };
+		06B786CE2A0544B600EFA46F /* AutoCompleteProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompleteProductsView.swift; sourceTree = "<group>"; };
+		06B786D02A0544FD00EFA46F /* AutoCompleteProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompleteProductsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +241,7 @@
 				06B786BE2A044D6200EFA46F /* QueryProductsView.swift */,
 				06B786C42A04822800EFA46F /* ProductInformationView.swift */,
 				06B786CA2A05308000EFA46F /* ComparableProductsView.swift */,
+				06B786CE2A0544B600EFA46F /* AutoCompleteProductsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 				06B786C02A044D7C00EFA46F /* QueryProductsViewModel.swift */,
 				06B786C62A04824E00EFA46F /* ProductInformationViewModel.swift */,
 				06B786CC2A0530AA00EFA46F /* ComparableProductsViewModel.swift */,
+				06B786D02A0544FD00EFA46F /* AutoCompleteProductsViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -409,6 +415,7 @@
 				06B786C52A04822800EFA46F /* ProductInformationView.swift in Sources */,
 				06B786AF2A041BAE00EFA46F /* IngredientSubstitutesDataModel.swift in Sources */,
 				06B786BD2A044AF000EFA46F /* ProudctsDataModel.swift in Sources */,
+				06B786D12A0544FD00EFA46F /* AutoCompleteProductsViewModel.swift in Sources */,
 				06B786A72A03E65F00EFA46F /* QueryIngredientsViewModel.swift in Sources */,
 				06B7869B2A02E68F00EFA46F /* IngredientsRecipesView.swift in Sources */,
 				06B786C32A047CFF00EFA46F /* ProductInformationDataModel.swift in Sources */,
@@ -418,6 +425,7 @@
 				06B786AB2A03F2D700EFA46F /* IngredientInformationView.swift in Sources */,
 				06B7868D2A01917C00EFA46F /* QueryRecipesViewModel.swift in Sources */,
 				06B786932A01DA2000EFA46F /* RecipeInformationViewModel.swift in Sources */,
+				06B786CF2A0544B600EFA46F /* AutoCompleteProductsView.swift in Sources */,
 				06B786BF2A044D6200EFA46F /* QueryProductsView.swift in Sources */,
 				06B786912A01DA0400EFA46F /* RecipeInformationView.swift in Sources */,
 				06B786852A017C8600EFA46F /* SearchRecipesView.swift in Sources */,
