@@ -8,7 +8,7 @@
 import Foundation
 
 class SearchProductsViewModel: ObservableObject{
-    var query = ""
-    var number = 10
-    var autocomplete = ""
+    @Published var query = ""
+    @Published var number = 10
+    @Published var autocomplete = ""
 }

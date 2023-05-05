@@ -28,6 +28,8 @@ struct ContentView: View {
                 NavigationLink("Search products") {
                     SearchProductsView()
                 }
+                Divider()
+                GoSearchMenuItems()
             }
             .navigationTitle("Search options")
         }
@@ -37,5 +39,16 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+struct GoSearchMenuItems: View{
+    var body: some View{
+        VStack{
+            Text("Menu items")
+                .font(.title)
+            NavigationLink("Search menu items") {
+                SearchMenuItemsView()
+            }
+        }
     }
 }
